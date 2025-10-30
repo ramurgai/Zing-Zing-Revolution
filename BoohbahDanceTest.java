@@ -7,5 +7,7 @@ public class BoohbahDanceTest{
         DanceRoutine preDance = new DanceRoutine(boohbah);
         System.out.println(preDance.buildRoutine());
         System.out.println(preDance.modifyRoutine());
+        System.out.println(preDance.remixRoutine());
     }
+
 }

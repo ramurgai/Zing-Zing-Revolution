@@ -21,4 +21,12 @@ public class DanceRoutine{
         stringRoutine = stringRoutine.replace("performs","hits the");
         return stringRoutine;
     }
+    public String remixRoutine(){
+        StringBuilder remixed = new StringBuilder(buildRoutine());
+        remixed.insert(0,"---REMIX---\n");
+        remixed.delete(remixed.length()-1, remixed.length()-1);
+        remixed.append("(Backwards Boohbah Shuffle!)");
+        remixed.reverse();
+        return remixed.toString();
+    }
 }
